@@ -45,6 +45,13 @@ def carrega_ranking():
     with st.expander(":orange[**🏆 Configurar títulos**]"):
         # st.subheader("⚙️ Configuração dos Títulos")
 
+        st.markdown("""
+        <div style='text-align: center; color: darkgray; font-weight: normal;'>
+            Obs.: Você pode modificar os nomes e valores dos títulos
+        </div>
+        """, unsafe_allow_html=True)
+            st.write("") # pula linha
+
         remover_titulo = None
 
         for i, titulo in enumerate(st.session_state.titulos):
@@ -189,5 +196,6 @@ def carrega_ranking():
         atualizar = st.button(":orange[**Atualizar**]")
         if atualizar:
             st.rerun()
+
 
 

@@ -7,10 +7,10 @@ import pandas as pd
 def carrega_ranking():
 
     st.markdown("""
-    <div style='text-align: center; color: darkorange; font-weight: bold; font-size: 25px;'>
-        Ranking de Clubes
-    </div>
-    """, unsafe_allow_html=True)
+        <div style='text-align: center; color: darkorange; font-weight: bold; font-size: 25px;'>
+            Ranking de Clubes
+        </div>
+        """, unsafe_allow_html=True)
     st.write("") # pula linha
 
     if "titulos" not in st.session_state:
@@ -50,7 +50,7 @@ def carrega_ranking():
             Obs.: Você pode modificar os nomes e valores dos títulos
         </div>
         """, unsafe_allow_html=True)
-            st.write("") # pula linha
+        st.write("") # pula linha
 
         remover_titulo = None
 
@@ -196,6 +196,7 @@ def carrega_ranking():
         atualizar = st.button(":orange[**Atualizar**]")
         if atualizar:
             st.rerun()
+
 
 
 

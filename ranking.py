@@ -138,7 +138,7 @@ def carrega_ranking():
 
                         qtd = st.selectbox(
                             "Quantidade",
-                            options=range(0, 21),
+                            options=range(0, 51),
                             key=f"{titulo}_{i}"
                         )
 
@@ -189,3 +189,4 @@ def carrega_ranking():
         atualizar = st.button(":orange[**Atualizar**]")
         if atualizar:
             st.rerun()
+

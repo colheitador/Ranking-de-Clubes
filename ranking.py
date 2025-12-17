@@ -60,7 +60,7 @@ def carrega_ranking():
 
             with col2:
                 valor = st.number_input(
-                    "Valor (pts)",
+                    "Valor (pontos)",
                     min_value=0,
                     value=titulo["valor"],
                     step=1,
@@ -189,4 +189,5 @@ def carrega_ranking():
         atualizar = st.button(":orange[**Atualizar**]")
         if atualizar:
             st.rerun()
+
 
